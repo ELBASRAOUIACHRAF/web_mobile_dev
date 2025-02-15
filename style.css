@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ede9e9;
+}
+
+nav {
+    position: fixed;
+    left: 25%;
+    background-color: #33333379;
+    color: white;
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 40px;
+}
+.nom {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.intro  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.intro pre {
+    font-size: 20px;
+    color: #333;
+}
+.intro img {
+    width: 190px; 
+    height: auto; 
+    align-self: center; 
+}
+.education {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; 
+}
+.baccalaureat, .prepa, .IID {
+    background-color: #f4f4f4;  
+    border-left: 5px solid #333; 
+    padding: 10px 15px;
+    margin: 10px 0;
+    flex: 1;
+    border-radius: 5px; 
+    min-height: 150px; /* Hauteur minimale égale */
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.baccalaureat h3 ,.prepa h3, .IID h3 {
+    color: #333; /* Couleur du texte */
+    font-size: 20px; /* Taille du titre */
+    margin-bottom: 5px;
+}
+
+.baccalaureat p, .prepa p, .IID p {
+    font-size: 16px;
+    color: #555; 
+}
+.baccalaureat:hover, .prepa:hover, .IID:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.skills {
+    display: flex; /* Aligner en ligne */
+    justify-content: space-around; /* Espacement égal */
+    flex-wrap: wrap; /* Permettre le retour à la ligne si l’écran est petit */
+    gap: 15px; /* Espacement entre les blocs */
+}
+
+.dev, .prog, .data, .fram, .tools {
+    border: 2px solid #333; 
+    border-radius: 8px; 
+    padding: 0px 15px; 
+    background-color: #f4f4f4;
+    text-align: center;
+    min-width: 150px; /* Largeur minimale */
+    flex: 1; /* Chaque élément prend un espace équitable */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+.dev:hover, .prog:hover, .data:hover, .fram:hover, .tools:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.proj1, .proj2 h4{
+    text-align: center;
+}
+
+.proj1, .proj2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+}
+.proj1, .proj2 {
+    border: #333 solid 3px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.proj1:hover, .proj2:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligner en haut */
+    gap: 20px;
+    flex-wrap: wrap; /* Permettre le retour à la ligne */
+}
+
+.contact-form {
+    width: 48%; /* Réduit la largeur pour éviter les débordements */
+}
+.contact-info {
+    width: 48%; /* Réduit la largeur pour éviter les débordements */
+}
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.localisation , .phone, .email, .linkedin, .github {
+    border: solid 1px #333;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-align: left;
+    flex: 1;
+}
+.localisation:hover , .phone:hover, .email:hover, .linkedin:hover, .github:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 13px;
+    margin-top: 20px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #f1c40f;
+}
