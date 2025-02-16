@@ -1,4 +1,5 @@
 body {
+    background-image: url("images/cool-background.png");
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@ nav a:hover {
     width: 90%;
     margin: auto;
     padding: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.317);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -79,8 +80,8 @@ nav a:hover {
 }
 
 .baccalaureat h3 ,.prepa h3, .IID h3 {
-    color: #333; /* Couleur du texte */
-    font-size: 20px; /* Taille du titre */
+    color: #333;
+    font-size: 20px; 
     margin-bottom: 5px;
 }
 
@@ -96,10 +97,10 @@ nav a:hover {
 
 
 .skills {
-    display: flex; /* Aligner en ligne */
-    justify-content: space-around; /* Espacement égal */
-    flex-wrap: wrap; /* Permettre le retour à la ligne si l’écran est petit */
-    gap: 15px; /* Espacement entre les blocs */
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 15px; 
 }
 
 .dev, .prog, .data, .fram, .tools {
@@ -108,9 +109,9 @@ nav a:hover {
     padding: 0px 15px; 
     background-color: #f4f4f4;
     text-align: center;
-    min-width: 150px; /* Largeur minimale */
-    flex: 1; /* Chaque élément prend un espace équitable */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    min-width: 150px; 
+    flex: 1; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .dev:hover, .prog:hover, .data:hover, .fram:hover, .tools:hover {
@@ -150,17 +151,15 @@ nav a:hover {
 .contact-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Aligner en haut */
+    align-items: flex-start;
     gap: 20px;
-    flex-wrap: wrap; /* Permettre le retour à la ligne */
+    flex-wrap: wrap; 
 }
 
-.contact-form {
-    width: 48%; /* Réduit la largeur pour éviter les débordements */
+.contact-form ,.contact-info {
+    width: 48%; 
 }
-.contact-info {
-    width: 48%; /* Réduit la largeur pour éviter les débordements */
-}
+
 .contact-info a {
     color: #333;
     text-decoration: none;
