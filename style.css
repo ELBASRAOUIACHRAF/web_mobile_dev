@@ -104,7 +104,7 @@ nav a:hover {
 }
 
 .dev, .prog, .data, .fram, .tools {
-    border: 2px solid #333; 
+    border-top: 5px solid #333; 
     border-radius: 8px; 
     padding: 0px 15px; 
     background-color: #f4f4f4;
@@ -126,7 +126,7 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 20px;
 }
-.proj1, .proj2 h4{
+.proj1, .proj2 h4, p{
     text-align: center;
 }
 
